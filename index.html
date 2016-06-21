@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>CV Intéractif</title>
+
+		<meta name="description" content="Improved by deinterfaz. Inspired by Kontext. Created using JavaScript, CSS 3D transforms and CSS Animations.">
+		<meta name="author" content="deinterfaz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="/css/animation.css">
+		<link rel="stylesheet" href="/css/demo.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic">
+
+	</head>
+	<body>
+
+		<section class="kontext">
+			<div class="layer one show">
+				<img src="/img/MS.png" height="100px">
+				<article>
+					<h1><em>Marie Schlagdenhaufen</em><br><p> Vous cherchez un stagiaire qui sache <b>monter</b> &amp; <b>filmer</b>? Quelqu'un de passionné ? <br> Vous êtes tombés sur la bonne personne ! <b>Bienvenue</b> sur mon CV en ligne.<br></p></h1><button>> ENTREZ</button>
+				</article>
+				<video autoplay loop poster="video.jpg" id="bgvid">
+					<source src="/img/DSC_0133.mp4" type="video/mp4">
+				</video>
+			</div>
+			
+			<div class="layer two">
+				<img src="/img/MS.png" height="100px";>
+				<nav class="menu">
+					<ul>
+						<li>
+							<a href="">CONTACT</a>
+						</li>
+						<li>
+							<a class="active" href="">Portfolio</a>
+						</li>
+						<li>
+							<a href="">parcours</a>
+						</li>
+						<li>
+							<a href="">qui suis-je?</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="presentation"><img src="img/presentationtexte.png" alt="Marie Schlagdenhaufen, étudiante en audiovisuel, web et graphisme."></div>
+				<div class="interets">
+					<div id="filmer"><img src="img/cinema.png"><p>J'aime le cinéma <br> et j'adore filmer</p></div>
+					<div id="cinema"></div>
+					<div id="monde"></div>
+					<div id="musique"></div>
+				</div>
+			</div>
+			
+			<div class="layer three">
+				<h2>Parcours</h2>
+			</div>
+			<div class="layer four">
+				<img src="/img/MS.png" height="100px";>
+				<nav class="menu">
+					<ul>
+						<li>
+							<a href="">CONTACT</a>
+						</li>
+						<li>
+							<a class="active" href="">Portfolio</a>
+						</li>
+						<li>
+							<a href="">parcours</a>
+						</li>
+						<li>
+							<a href="">qui suis-je?</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="titres">
+					<ul>
+						<li>
+							<a href="https://www.youtube.com/channel/UCDqIGUDV_4VNpnuIXJyrYOw" target="_blank">Créations <b>audiovisuelles</b></a>
+						</li>
+						<li>
+							<a href="graphique">Créations <b>graphiques</b></a>
+						</li>
+						<li>
+							<a href="/galerie/index.html" target="_blank">Photographie</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+				<div class="layer five">
+					<img src="/img/MS.png" height="100px";>
+						<nav class="menu">
+							<ul>
+								<li>
+									<a href="">CONTACT</a>
+								</li>
+								<li>
+									<a class="active" href="">Portfolio</a>
+								</li>
+								<li>
+									<a href="">parcours</a>
+								</li>
+								<li>
+									<a href="">qui suis-je?</a>
+								</li>
+							</ul>
+						</nav>
+					<h1>CONTACT</h1>
+						<form method="post" action="traitement.php">
+							<input type="text" name="votrenom" id="votrenom" placeholder="Votre nom"/><br>
+							<input type="email" name="email" id="email" placeholder="Votre E-mail"/><br>
+							<textarea name="texte" id="texte" placeholder="Laissez un commentaire."></textarea><br>
+							<input type="submit" value="Envoyer >"/>
+						</form>
+					<div class="reseaux">
+						<h2><b>N'hésitez pas à me contacter pour toute information supplémentaire.</b><br>Je réponds à tout dans les plus brefs délais.</em></h2>
+							<p><b>Téléphone</b> &nbsp; &nbsp; &nbsp; 06 59 51 10 69<br><b>Email</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; marie-schlagdenhaufen@gmail.com <br> <a href="">Téléchargez mon CV</a>
+								<h3>Rejoignez moi sur mes réseaux :</h3>
+					<div class="icons">
+						<a class="youtube" href="https://www.youtube.com/channel/UCLZ81f_HDpk8vcNn2AQRBEw" target="_blank"><img src="img/youtube.png" height="50"></a>
+						<a class="instagram" href="https://www.instagram.com/heartsbeating/" target="_blank"><img src="img/instagram.png" height="50"></a>
+						<a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" height="50"></a>
+						<a class="twitter" href="https://twitter.com/Marie_Shg" target="_blank"><img src="img/twitter.png" height="50"></a>
+					</div>
+							</p>
+					</div>
+				</div>
+		</section>
+
+		<ul class="bullets"></ul>
+
+		
+		<div class="credit">by Marie Schlagdenhaufen - 2016
+
+		<script src="../../js/transitions.js"></script>
+		<script>
+			// Create a new instance of kontext
+			var k = kontext( document.querySelector( '.kontext' ) );
+
+
+			// API METHODS:
+
+			// k.prev(); // Show prev layer
+			// k.next(); // Show next layer
+			// k.show(); // Show specific layer
+			// k.getIndex(); // Index of current layer
+			// k.getTotal(5); // Total number of layers
+
+
+			// DEMO-SPECIFIC:
+
+			var bulletsContainer = document.body.querySelector( '.bullets' );
+
+			// Create one bullet per layer
+			for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+				var bullet = document.createElement( 'li' );
+				bullet.className = i === 0 ? 'active' : '';
+				bullet.setAttribute( 'index', i );
+				bullet.onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+				bullet.ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+				bulletsContainer.appendChild( bullet );
+			}
+
+			// Update the bullets when the layer changes
+			k.changed.add( function( layer, index ) {
+				var bullets = document.body.querySelectorAll( '.bullets li' );
+				for( var i = 0, len = bullets.length; i < len; i++ ) {
+					bullets[i].className = i === index ? 'active' : '';
+				}
+			} );
+
+			document.addEventListener( 'keyup', function( event ) {
+				if( event.keyCode === 37 ) k.prev();
+				if( event.keyCode === 39 ) k.next();
+			}, false );
+
+			var touchX = 0;
+			var touchConsumed = false;
+
+			document.addEventListener( 'touchstart', function( event ) {
+				touchConsumed = false;
+				lastX = event.touches[0].clientX;
+			}, false );
+
+			document.addEventListener( 'touchmove', function( event ) {
+				event.preventDefault();
+
+				if( !touchConsumed ) {
+					if( event.touches[0].clientX > lastX + 10 ) {
+						k.prev();
+						touchConsumed = true;
+					}
+					else if( event.touches[0].clientX < lastX - 10 ) {
+						k.next();
+						touchConsumed = true;
+					}
+				}
+			}, false );
+
+		</script>
+
+		
+	</body>
+</html>
