@@ -3,76 +3,158 @@
 	<head>
 
 		<meta charset="utf-8">
-
+		<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 		<title>CV Intéractif</title>
 
 		<meta name="description" content="Improved by deinterfaz. Inspired by Kontext. Created using JavaScript, CSS 3D transforms and CSS Animations.">
 		<meta name="author" content="deinterfaz">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="/css/animation.css">
-		<link rel="stylesheet" href="/css/demo.css">
+		<link rel="stylesheet" href="./css/animation.css">
+		<link rel="stylesheet" href="./css/styles.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic">
-
 	</head>
 	<body>
+		
+<!--			PAGE D'ACCUEIL-->
 
 		<section class="kontext">
 			<div class="layer one show">
-				<img src="/img/MS.png" height="100px">
+				<img src="./img/MS.png" height="100px">
 				<article>
-					<h1><em>Marie Schlagdenhaufen</em><br><p> Vous cherchez un stagiaire qui sache <b>monter</b> &amp; <b>filmer</b>? Quelqu'un de passionné ? <br> Vous êtes tombés sur la bonne personne ! <b>Bienvenue</b> sur mon CV en ligne.<br></p></h1><button>> ENTREZ</button>
+					<h1><em>Marie Schlagdenhaufen</em><br><p> Vous cherchez un stagiaire qui sache <b>monter</b> &amp; <b>filmer</b>? Quelqu'un de passionné ? <br> Vous êtes tombés sur la bonne personne ! <b>Bienvenue</b> sur mon CV en ligne.<br></p></h1><button id="entrez" onClick="entrez(this.id)">> ENTREZ</button>
 				</article>
-				<video autoplay loop poster="video.jpg" id="bgvid">
-					<source src="/img/DSC_0133.mp4" type="video/mp4">
+				<video muted autoplay loop poster="video.jpg" id="bgvid">
+					<source src="./img/DSC_0133.mp4" type="video/mp4">
 				</video>
 			</div>
 			
+<!--			PAGE QUI SUIS-JE?-->
+			
 			<div class="layer two">
-				<img src="/img/MS.png" height="100px";>
+				<img src="./img/MS.png" height="100px";>
 				<nav class="menu">
 					<ul>
-						<li>
-							<a href="">CONTACT</a>
+						<li id="contact" onClick="contact(this.id)">
+							<a>CONTACT</a>
 						</li>
-						<li>
-							<a class="active" href="">Portfolio</a>
+						<li id="portfolio" onClick="portfolio(this.id)">
+							<a>Portfolio</a>
 						</li>
-						<li>
-							<a href="">parcours</a>
+						<li id="competences" onClick="competences(this.id)">
+							<a>compétences</a>
 						</li>
-						<li>
-							<a href="">qui suis-je?</a>
+						<li id="parcours" onClick="parcours(this.id)">
+							<a>parcours</a>
+						</li>
+						<li id="quisuisje" class="encours" onClick="kisuisje(this.id)">
+							<a>qui suis-je?</a>
 						</li>
 					</ul>
 				</nav>
-				<div class="presentation"><img src="img/presentationtexte.png" alt="Marie Schlagdenhaufen, étudiante en audiovisuel, web et graphisme."></div>
+				<img class="description" src="./img/presentationtexte.png">
 				<div class="interets">
-					<div id="filmer"><img src="img/cinema.png"><p>J'aime le cinéma <br> et j'adore filmer</p></div>
-					<div id="cinema"></div>
-					<div id="monde"></div>
-					<div id="musique"></div>
+					<div class="cinema"><img src="./img/cinema.png"><p>J'aime le <b>cinéma</b><br>et j'adore <b>filmer</b></p></div>
+				<div class="photographier"><img src="./img/photo.png"><p>J'aime <b>photographier</b><br>et créer de <b>belles images</b></p></div>
+				<div class="voyages"><img src="./img/terre.png"><p>Passionnée de <b>voyages</b><br>j'aime découvrir le<b>monde</b></p></div>
+				<div class="musique"><img src="./img/musique.png"><p>J'adore jouer du <b>piano</b><br>et j'apprécie la<b>musique</b></p></div>
+			</div>
+			</div>
+
+<!--			PAGE FORMATIONS-->			
+			<div class="layer three">
+				<img src="./img/MS.png" height="100px";>
+				<nav class="menu">
+					<ul>
+						<li id="contact" onClick="contact(this.id)">
+							<a>CONTACT</a>
+						</li>
+						<li id="portfolio" onClick="portfolio(this.id)">
+							<a>Portfolio</a>
+						</li>
+						<li id="competences" onClick="competences(this.id)">
+							<a>compétences</a>
+						</li>
+						<li id="parcours" class="encours" onClick="parcours(this.id)">
+							<a>parcours</a>
+						</li>
+						<li id="quisuisje" onClick="kisuisje(this.id)">
+							<a>qui suis-je?</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="timeline">
+				<div class="ligne1">
+					<h1>Mes expériences & formations</h1>
+						<div class="separation"></div>
+							<p><img src="./img/rond.png"><b>Décembre 2013</b><br>Lauréate d'un concours<br>de montage vidéo<br>pour TF1<br></p>
+							<p><img src="./img/rond.png"><b>2013 à aujourd'hui</b><br>Création d'une chaîne<br> youtube où je monte<br> des vidéos</p>
+							<p><img src="./img/rond.png"><b>2015 à aujourd'hui</b><br>Réalisation de vidéos<br> pour le plaisir<br> sur des sujets divers</p>
+				</div>
+					<div class="ligne2">
+<!--						<h1> Mes formations :</h1>-->
+							<div class="separation"></div>
+								<p><img src="./img/rond.png"><b>2015 à aujourd'hui</b><br>DUT MMI<br>Audiovisuel, graphisme<br>et intégration web</p>
+								<p><img src="./img/rond.png"><b>Juin 2014</b><br>Obtention du<br> baccalauréat ES,<br> mention bien</p>
+								<p><img src="./img/rond.png"><b>2011 à 2014</b><br>Lycée section<br>économique et<br>sociale, option arts</p>
+					</div>
 				</div>
 			</div>
 			
-			<div class="layer three">
-				<h2>Parcours</h2>
-			</div>
-			<div class="layer four">
-				<img src="/img/MS.png" height="100px";>
+			<!--			PAGE COMPETENCES-->	
+			<div class="layer competences">
+				<img src="./img/MS.png" height="100px";>
 				<nav class="menu">
 					<ul>
-						<li>
-							<a href="">CONTACT</a>
+						<li id="contact" onClick="contact(this.id)">
+							<a>CONTACT</a>
 						</li>
-						<li>
-							<a class="active" href="">Portfolio</a>
+						<li id="portfolio" onClick="portfolio(this.id)">
+							<a>Portfolio</a>
 						</li>
-						<li>
-							<a href="">parcours</a>
+						<li id="competences" class="encours" onClick="competences(this.id)">
+							<a>compétences</a>
 						</li>
-						<li>
-							<a href="">qui suis-je?</a>
+						<li id="parcours" onClick="parcours(this.id)">
+							<a>parcours</a>
+						</li>
+						<li id="quisuisje" onClick="kisuisje(this.id)">
+							<a>qui suis-je?</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="suiteadobe">
+					<li id="premiere"><img src="./img/premiere.png" height="180"><span id="spanpremiere">75%</span></li>
+					<li id="vegas"><img src="./img/vegas.png" height="180"><span id="spanvegas">90%</span></li>
+					<li id="illustrator"><img src="./img/illustrator.png" height="180"><span id="spanillustrator">85%</span></li>
+				</ul>
+				<ul class="langues">
+					<li id="photoshop"><img src="./img/photoshop.png" height="180"><span id="spanphotoshop">75%</span></li>
+					<li id="anglais"><img src="./img/anglais.png" height="180"><span id="spananglais">85%</span></li>
+					<li id="allemand"><img src="./img/allemand.png" height="180"><span id="spanallemand">85%</span></li>
+				</ul>
+			</div>
+			
+<!--			PAGE PORTFOLIO-->
+			
+			<div class="layer four">
+				<img src="./img/MS.png" height="100px";>
+				<nav class="menu">
+					<ul>
+						<li id="contact" onClick="contact(this.id)">
+							<a>CONTACT</a>
+						</li>
+						<li id="portfolio" class="encours" onClick="portfolio(this.id)">
+							<a>Portfolio</a>
+						</li>
+						<li id="competences" onClick="competences(this.id)">
+							<a>compétences</a>
+						</li>
+						<li id="parcours" onClick="parcours(this.id)">
+							<a>parcours</a>
+						</li>
+						<li id="quisuisje" onClick="kisuisje(this.id)">
+							<a>qui suis-je?</a>
 						</li>
 					</ul>
 				</nav>
@@ -85,29 +167,35 @@
 							<a href="graphique">Créations <b>graphiques</b></a>
 						</li>
 						<li>
-							<a href="/galerie/index.html" target="_blank">Photographie</a>
+							<a href="https://www.flickr.com/photos/144532815@N05/albums/with/72157667431914623" target="_blank">Photographies</a>
 						</li>
 					</ul>
 				</div>
 			</div>
+			
+<!--			PAGE CONTACT-->
+			
 				<div class="layer five">
-					<img src="/img/MS.png" height="100px";>
-						<nav class="menu">
-							<ul>
-								<li>
-									<a href="">CONTACT</a>
-								</li>
-								<li>
-									<a class="active" href="">Portfolio</a>
-								</li>
-								<li>
-									<a href="">parcours</a>
-								</li>
-								<li>
-									<a href="">qui suis-je?</a>
-								</li>
-							</ul>
-						</nav>
+					<img src="./img/MS.png" height="100px";>
+					<nav class="menu">
+						<ul>
+							<li id="contact" class="encours" onClick="contact(this.id)">
+								<a>CONTACT</a>
+							</li>
+							<li id="portfolio" onClick="portfolio(this.id)">
+								<a>Portfolio</a>
+							</li>
+							<li id="competences" onClick="competences(this.id)">
+								<a>compétences</a>
+							</li>
+							<li id="parcours" onClick="parcours(this.id)">
+								<a>parcours</a>
+							</li>
+							<li id="quisuisje" onClick="kisuisje(this.id)">
+								<a>qui suis-je?</a>
+							</li>
+						</ul>
+					</nav>
 					<h1>CONTACT</h1>
 						<form method="post" action="traitement.php">
 							<input type="text" name="votrenom" id="votrenom" placeholder="Votre nom"/><br>
@@ -120,22 +208,22 @@
 							<p><b>Téléphone</b> &nbsp; &nbsp; &nbsp; 06 59 51 10 69<br><b>Email</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; marie-schlagdenhaufen@gmail.com <br> <a href="">Téléchargez mon CV</a>
 								<h3>Rejoignez moi sur mes réseaux :</h3>
 					<div class="icons">
-						<a class="youtube" href="https://www.youtube.com/channel/UCLZ81f_HDpk8vcNn2AQRBEw" target="_blank"><img src="img/youtube.png" height="50"></a>
-						<a class="instagram" href="https://www.instagram.com/heartsbeating/" target="_blank"><img src="img/instagram.png" height="50"></a>
-						<a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" height="50"></a>
-						<a class="twitter" href="https://twitter.com/Marie_Shg" target="_blank"><img src="img/twitter.png" height="50"></a>
+						<a class="youtube" href="https://www.youtube.com/channel/UCLZ81f_HDpk8vcNn2AQRBEw" target="_blank"><img src="./img/youtube.png" height="50"></a>
+						<a class="instagram" href="https://www.instagram.com/heartsbeating/" target="_blank"><img src="./img/instagram.png" height="50"></a>
+						<a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" height="50"></a>
+						<a class="twitter" href="https://twitter.com/Marie_Shg" target="_blank"><img src="./img/twitter.png" height="50"></a>
 					</div>
 							</p>
 					</div>
 				</div>
 		</section>
 
-		<ul class="bullets"></ul>
+<!--		<ul class="bullets"></ul>-->
 
 		
-		<div class="credit">by Marie Schlagdenhaufen - 2016
+		<div class="credit">Marie Schlagdenhaufen - 2016
 
-		<script src="../../js/transitions.js"></script>
+		<script src="./js/transitions.js"></script>
 		<script>
 			// Create a new instance of kontext
 			var k = kontext( document.querySelector( '.kontext' ) );
@@ -171,7 +259,7 @@
 					bullets[i].className = i === index ? 'active' : '';
 				}
 			} );
-
+// permet le deplacement avec les flèches
 			document.addEventListener( 'keyup', function( event ) {
 				if( event.keyCode === 37 ) k.prev();
 				if( event.keyCode === 39 ) k.next();
@@ -199,6 +287,39 @@
 					}
 				}
 			}, false );
+			
+//			$('#quisuisje').click(function(el){
+//				k.show(3);
+//			})
+			
+		
+			function kisuisje(layer)
+			{
+				k.show(1);
+			}
+			
+			function contact(layer)
+			{
+			 	k.show(5);
+			}
+			
+			function portfolio(layer)
+			{
+				k.show(4);
+			}
+			
+			function entrez(layer)
+			{
+				k.show(1);
+			}
+			function parcours(layer)
+			{
+				k.show(2)
+			}
+			function competences(layer)
+			{
+				k.show(3)
+			}
 
 		</script>
 

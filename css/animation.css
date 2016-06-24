@@ -88,7 +88,7 @@ video#bgvid {
 	min-width: 100%; min-height: 100%;
 	opacity: 0.5;
 	width: auto; height: auto; z-index: -100;
-	background: url(images/CV.jpg) no-repeat;
+	background: url(../img/CV.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -96,7 +96,7 @@ video {display: block; }
 
 @media screen and (max-device-width: 800px) {
 	html {
-		background: url(images/CV.jpg) #OOO no-repeat center center fixed; }
+		background: url(../img/CV.jpg) #OOO no-repeat center center fixed; }
 	#bgvid {display: none; }
 }
 
