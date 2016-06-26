@@ -585,7 +585,7 @@ img {
 }
 
 .reseaux h2 {
-	font-family: Gill sans nova;
+	font-family: Century Gothic;
 	letter-spacing: 1px;
 	font-size: 1.3em;
 	font-weight: 100;
@@ -596,7 +596,7 @@ img {
 }
 
 .reseaux p {
-	font-family: Gill sans nova;
+	font-family: Century Gothic;
 	margin-top: 10%;
 	font-size: 1.1em;
 }
@@ -619,7 +619,7 @@ img {
 
 .reseaux h3 {
 	margin-top: 18%;
-	font-family: Gill sans nova;
+	font-family: Century Gothic;
 	letter-spacing: 1px;
 	position: absolute;
 	text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.7);
@@ -746,6 +746,82 @@ input[type=submit] {
 			background: #fff;
 		}
 
+@media screen and (max-width: 1440px){
+	.layer.one button {
+		margin-top: 45%;
+		margin-left: 40%;
+	}
+
+	.layer.one h1  {
+		font-size: 2em;
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.layer.one em {
+		font-size: 1.5em;
+		width: 80%;
+		margin-left: 15%;
+	}
+	
+	.cinema {
+		margin-top: 10%;
+	}
+
+	.cinema p {
+		margin-left: 30%;
+		font-size: 0.8em;
+		margin-top: 20%;
+	}
+
+	.photographier {
+		margin-top: 20%;
+	}
+
+	.photographier p {
+		margin-left: 30%;
+		font-size: 0.8em;
+		margin-top: 20%;
+	}
+
+	.voyages {
+		margin-top: 30%;
+	}
+
+	.voyages p {
+		margin-left: 30%;
+		font-size: 0.8em;
+		margin-top: 20%;
+	}
+
+	.musique {
+		margin-top: 40%;
+	}
+
+	.musique p {
+		margin-left: 30%;
+		font-size: 0.8em;
+		margin-top: 20%;
+	}
+	.suiteadobe li {
+		margin-left: 15%;
+		margin-right: 10%;
+	}
+
+	.langues li {
+		margin-top: 10%;
+		margin-left: 15%;
+		margin-right: 10%;
+	}
+	#spanpremiere, #spanvegas, #spanillustrator, #spanphotoshop, #spananglais, #spanallemand {
+		margin-top: 7%;
+		margin-left: 2%;
+		font-size: 4em;
+		text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.7);
+	}
+}
+
+
 @media screen and (max-width: 1024px) {
 	body {
 		font-size: 12px;
@@ -804,7 +880,7 @@ input[type=submit] {
 	}
 	
 	.cinema p {
-		margin-left: 50%;
+		margin-left: 70%;
 		font-size: 0.8em;
 		margin-top: 25%;
 	}

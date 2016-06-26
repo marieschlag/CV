@@ -4,15 +4,17 @@
 
 		<meta charset="utf-8">
 		<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
-		<title>CV Intéractif</title>
+		<title>Marie Schlagdenhaufen</title>
 
 		<meta name="description" content="Improved by deinterfaz. Inspired by Kontext. Created using JavaScript, CSS 3D transforms and CSS Animations.">
 		<meta name="author" content="deinterfaz">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<link rel="stylesheet" href="./css/animation.css">
-		<link rel="stylesheet" href="./css/styles.css">
+		
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="./CV-master/css/animation.css">
+		<link rel="stylesheet" href="./CV-master/css/styles.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic">
+		<link rel="shortcut icon" type="image/x-icon" href="./CV-master/img/favicon.ico" />
 	</head>
 	<body>
 		
@@ -20,19 +22,19 @@
 
 		<section class="kontext">
 			<div class="layer one show">
-				<img src="./img/MS.png" height="100px">
+				<img src="./CV-master/img/MS.png" height="100px">
 				<article>
 					<h1><em>Marie Schlagdenhaufen</em><br><p> Vous cherchez un stagiaire qui sache <b>monter</b> &amp; <b>filmer</b>? Quelqu'un de passionné ? <br> Vous êtes tombés sur la bonne personne ! <b>Bienvenue</b> sur mon CV en ligne.<br></p></h1><button id="entrez" onClick="entrez(this.id)">> ENTREZ</button>
 				</article>
 				<video muted autoplay loop poster="video.jpg" id="bgvid">
-					<source src="./img/DSC_0133.mp4" type="video/mp4">
+					<source src="./CV-master/img/DSC_0133.mp4" type="video/mp4">
 				</video>
 			</div>
 			
 <!--			PAGE QUI SUIS-JE?-->
 			
 			<div class="layer two">
-				<img src="./img/MS.png" height="100px";>
+				<img src="./CV-master/img/MS.png" height="100px";>
 				<nav class="menu">
 					<ul>
 						<li id="contact" onClick="contact(this.id)">
@@ -52,18 +54,18 @@
 						</li>
 					</ul>
 				</nav>
-				<img class="description" src="./img/presentationtexte.png">
+				<img class="description" src="./CV-master/img/presentationtexte.png">
 				<div class="interets">
-					<div class="cinema"><img src="./img/cinema.png"><p>J'aime le <b>cinéma</b><br>et j'adore <b>filmer</b></p></div>
-				<div class="photographier"><img src="./img/photo.png"><p>J'aime <b>photographier</b><br>et créer de <b>belles images</b></p></div>
-				<div class="voyages"><img src="./img/terre.png"><p>Passionnée de <b>voyages</b><br>j'aime découvrir le<b>monde</b></p></div>
-				<div class="musique"><img src="./img/musique.png"><p>J'adore jouer du <b>piano</b><br>et j'apprécie la<b>musique</b></p></div>
+					<div class="cinema"><img src="./CV-master/img/cinema.png"><p>J'aime le <b>cinéma</b><br>et j'adore <b>filmer</b></p></div>
+				<div class="photographier"><img src="./CV-master/img/photo.png"><p>J'aime <b>photographier</b><br>et créer de <b>belles images</b></p></div>
+				<div class="voyages"><img src="./CV-master/img/terre.png"><p>Passionnée de <b>voyages</b><br>j'aime découvrir le<b>monde</b></p></div>
+				<div class="musique"><img src="./CV-master/img/musique.png"><p>J'adore jouer du <b>piano</b><br>et j'apprécie la<b>musique</b></p></div>
 			</div>
 			</div>
 
 <!--			PAGE FORMATIONS-->			
 			<div class="layer three">
-				<img src="./img/MS.png" height="100px";>
+				<img src="./CV-master/img/MS.png" height="100px";>
 				<nav class="menu">
 					<ul>
 						<li id="contact" onClick="contact(this.id)">
@@ -87,23 +89,23 @@
 				<div class="ligne1">
 					<h1>Mes expériences & formations</h1>
 						<div class="separation"></div>
-							<p><img src="./img/rond.png"><b>Décembre 2013</b><br>Lauréate d'un concours<br>de montage vidéo<br>pour TF1<br></p>
-							<p><img src="./img/rond.png"><b>2013 à aujourd'hui</b><br>Création d'une chaîne<br> youtube où je monte<br> des vidéos</p>
-							<p><img src="./img/rond.png"><b>2015 à aujourd'hui</b><br>Réalisation de vidéos<br> pour le plaisir<br> sur des sujets divers</p>
+							<p><img src="./CV-master/img/rond.png"><b>Décembre 2013</b><br>Lauréate d'un concours<br>de montage vidéo<br>pour TF1<br></p>
+							<p><img src="./CV-master/img/rond.png"><b>2013 à aujourd'hui</b><br>Création d'une chaîne<br> youtube où je monte<br> des vidéos</p>
+							<p><img src="./CV-master/img/rond.png"><b>2015 à aujourd'hui</b><br>Réalisation de vidéos<br> pour le plaisir<br> sur des sujets divers</p>
 				</div>
 					<div class="ligne2">
 <!--						<h1> Mes formations :</h1>-->
 							<div class="separation"></div>
-								<p><img src="./img/rond.png"><b>2015 à aujourd'hui</b><br>DUT MMI<br>Audiovisuel, graphisme<br>et intégration web</p>
-								<p><img src="./img/rond.png"><b>Juin 2014</b><br>Obtention du<br> baccalauréat ES,<br> mention bien</p>
-								<p><img src="./img/rond.png"><b>2011 à 2014</b><br>Lycée section<br>économique et<br>sociale, option arts</p>
+								<p><img src="./CV-master/img/rond.png"><b>2015 à aujourd'hui</b><br>DUT MMI<br>Audiovisuel, graphisme<br>et intégration web</p>
+								<p><img src="./CV-master/img/rond.png"><b>Juin 2014</b><br>Obtention du<br> baccalauréat ES,<br> mention bien</p>
+								<p><img src="./CV-master/img/rond.png"><b>2011 à 2014</b><br>Lycée section<br>économique et<br>sociale, option arts</p>
 					</div>
 				</div>
 			</div>
 			
 			<!--			PAGE COMPETENCES-->	
 			<div class="layer competences">
-				<img src="./img/MS.png" height="100px";>
+				<img src="./CV-master/img/MS.png" height="100px";>
 				<nav class="menu">
 					<ul>
 						<li id="contact" onClick="contact(this.id)">
@@ -124,21 +126,21 @@
 					</ul>
 				</nav>
 				<ul class="suiteadobe">
-					<li id="premiere"><img src="./img/premiere.png" height="180"><span id="spanpremiere">75%</span></li>
-					<li id="vegas"><img src="./img/vegas.png" height="180"><span id="spanvegas">90%</span></li>
-					<li id="illustrator"><img src="./img/illustrator.png" height="180"><span id="spanillustrator">85%</span></li>
+					<li id="premiere"><img src="./CV-master/img/premiere.png" height="180"><span id="spanpremiere">75%</span></li>
+					<li id="vegas"><img src="./CV-master/img/vegas.png" height="180"><span id="spanvegas">90%</span></li>
+					<li id="illustrator"><img src="./CV-master/img/illustrator.png" height="180"><span id="spanillustrator">85%</span></li>
 				</ul>
 				<ul class="langues">
-					<li id="photoshop"><img src="./img/photoshop.png" height="180"><span id="spanphotoshop">75%</span></li>
-					<li id="anglais"><img src="./img/anglais.png" height="180"><span id="spananglais">85%</span></li>
-					<li id="allemand"><img src="./img/allemand.png" height="180"><span id="spanallemand">85%</span></li>
+					<li id="photoshop"><img src="./CV-master/img/photoshop.png" height="180"><span id="spanphotoshop">75%</span></li>
+					<li id="anglais"><img src="./CV-master/img/anglais.png" height="180"><span id="spananglais">85%</span></li>
+					<li id="allemand"><img src="./CV-master/img/allemand.png" height="180"><span id="spanallemand">85%</span></li>
 				</ul>
 			</div>
 			
 <!--			PAGE PORTFOLIO-->
 			
 			<div class="layer four">
-				<img src="./img/MS.png" height="100px";>
+				<img src="./CV-master/img/MS.png" height="100px";>
 				<nav class="menu">
 					<ul>
 						<li id="contact" onClick="contact(this.id)">
@@ -176,7 +178,7 @@
 <!--			PAGE CONTACT-->
 			
 				<div class="layer five">
-					<img src="./img/MS.png" height="100px";>
+					<img src="./CV-master/img/MS.png" height="100px";>
 					<nav class="menu">
 						<ul>
 							<li id="contact" class="encours" onClick="contact(this.id)">
@@ -205,13 +207,13 @@
 						</form>
 					<div class="reseaux">
 						<h2><b>N'hésitez pas à me contacter pour toute information supplémentaire.</b><br>Je réponds à tout dans les plus brefs délais.</em></h2>
-							<p><b>Téléphone</b> &nbsp; &nbsp; &nbsp; 06 59 51 10 69<br><b>Email</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; marie-schlagdenhaufen@gmail.com <br> <a href="">Téléchargez mon CV</a>
+					<p><b>Téléphone</b> &nbsp; &nbsp; &nbsp; 06 59 51 10 69<br><b>Email</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; marie-schlagdenhaufen@gmail.com <br> <a href="./CV-master/img/CVpapier.jpg" download="CVpapier">Téléchargez mon CV</a>
 								<h3>Rejoignez moi sur mes réseaux :</h3>
 					<div class="icons">
-						<a class="youtube" href="https://www.youtube.com/channel/UCLZ81f_HDpk8vcNn2AQRBEw" target="_blank"><img src="./img/youtube.png" height="50"></a>
-						<a class="instagram" href="https://www.instagram.com/heartsbeating/" target="_blank"><img src="./img/instagram.png" height="50"></a>
-						<a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" height="50"></a>
-						<a class="twitter" href="https://twitter.com/Marie_Shg" target="_blank"><img src="./img/twitter.png" height="50"></a>
+						<a class="youtube" href="https://www.youtube.com/channel/UCLZ81f_HDpk8vcNn2AQRBEw" target="_blank"><img src="./CV-master/img/youtube.png" height="50"></a>
+						<a class="instagram" href="https://www.instagram.com/heartsbeating/" target="_blank"><img src="./CV-master/img/instagram.png" height="50"></a>
+						<a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="./CV-master/img/facebook.png" height="50"></a>
+						<a class="twitter" href="https://twitter.com/Marie_Shg" target="_blank"><img src="./CV-master/img/twitter.png" height="50"></a>
 					</div>
 							</p>
 					</div>
@@ -223,7 +225,7 @@
 		
 		<div class="credit">Marie Schlagdenhaufen - 2016
 
-		<script src="./js/transitions.js"></script>
+		<script src="./CV-master/js/transitions.js"></script>
 		<script>
 			// Create a new instance of kontext
 			var k = kontext( document.querySelector( '.kontext' ) );
